@@ -6,5 +6,9 @@ application = Flask(__name__)
 def hello():
     return "Welcome to UNIQUE88 Sample Python Flask App"
 
+@application.route("/hello")
+def hello():
+    return "Hello from second page to UNIQUE88 ! "
+
 if __name__ == "__main__":
-    application.run(host='127.0.0.1', port=5000, debug=True)
+    application.run(port=8000, debug=True)
