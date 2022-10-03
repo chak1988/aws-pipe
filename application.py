@@ -11,5 +11,9 @@ def hello():
 def hello_unique():
     return "Hello from second page to UNIQUE88 ! "
 
+@application.route("/square/<int:x>")
+def square(x):
+    return f"square of x is : {x * x}"
+
 if __name__ == "__main__":
     application.run(port=8000, debug=True)
