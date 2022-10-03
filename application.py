@@ -6,8 +6,9 @@ application = Flask(__name__)
 def hello():
     return "Welcome to UNIQUE88 Sample Python Flask App"
 
+
 @application.route("/hello")
-def hello():
+def hello_unique():
     return "Hello from second page to UNIQUE88 ! "
 
 if __name__ == "__main__":
